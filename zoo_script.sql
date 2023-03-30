@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [Zoo]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Database [Zoo]    Script Date: 30.03.2023 07:52:14 ******/
 CREATE DATABASE [Zoo]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -80,7 +80,7 @@ ALTER DATABASE [Zoo] SET QUERY_STORE = OFF
 GO
 USE [Zoo]
 GO
-/****** Object:  Table [dbo].[Abteilung]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Abteilung]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -94,7 +94,7 @@ CREATE TABLE [dbo].[Abteilung](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Art]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Art]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -109,7 +109,52 @@ CREATE TABLE [dbo].[Art](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Futter]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Behandlung]    Script Date: 30.03.2023 07:52:14 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Behandlung](
+	[Behandlung_ID] [smallint] NOT NULL,
+	[Diagnose] [nvarchar](255) NOT NULL,
+	[Tier] [smallint] NULL,
+ CONSTRAINT [PK_Behandlung] PRIMARY KEY CLUSTERED 
+(
+	[Behandlung_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Behandlung_Diagnose]    Script Date: 30.03.2023 07:52:14 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Behandlung_Diagnose](
+	[BehandlungNr] [smallint] NOT NULL,
+	[DiagnoseNr] [smallint] NOT NULL,
+	[Diagnosedatum] [date] NOT NULL,
+ CONSTRAINT [PK_Behandlung_Diagnose] PRIMARY KEY CLUSTERED 
+(
+	[BehandlungNr] ASC,
+	[DiagnoseNr] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Diagnose]    Script Date: 30.03.2023 07:52:14 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Diagnose](
+	[Diagnose_ID] [smallint] NOT NULL,
+	[Beschreibung] [nvarchar](255) NOT NULL,
+ CONSTRAINT [PK_Diagnose] PRIMARY KEY CLUSTERED 
+(
+	[Diagnose_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Futter]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -124,7 +169,7 @@ CREATE TABLE [dbo].[Futter](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Futtermenge]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Futtermenge]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -140,7 +185,7 @@ CREATE TABLE [dbo].[Futtermenge](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Futterration]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Futterration]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -155,7 +200,7 @@ CREATE TABLE [dbo].[Futterration](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Gehege]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Gehege]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -170,7 +215,7 @@ CREATE TABLE [dbo].[Gehege](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Gehegebetreuung]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Gehegebetreuung]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -185,7 +230,7 @@ CREATE TABLE [dbo].[Gehegebetreuung](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Klasse]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Klasse]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -199,7 +244,7 @@ CREATE TABLE [dbo].[Klasse](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Lager]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Lager]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -214,7 +259,7 @@ CREATE TABLE [dbo].[Lager](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Lagerposition]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Lagerposition]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -230,7 +275,7 @@ CREATE TABLE [dbo].[Lagerposition](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Mitarbeiter]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Mitarbeiter]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -250,7 +295,7 @@ CREATE TABLE [dbo].[Mitarbeiter](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Objekte]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Objekte]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -265,7 +310,39 @@ CREATE TABLE [dbo].[Objekte](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Tiere]    Script Date: 29.03.2023 10:35:48 ******/
+/****** Object:  Table [dbo].[Personal_Behandlung]    Script Date: 30.03.2023 07:52:14 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Personal_Behandlung](
+	[BehandlungNr] [smallint] NOT NULL,
+	[PersonalNr] [smallint] NOT NULL,
+	[Behandlungstermin] [date] NULL,
+ CONSTRAINT [PK_Personal_Behandlung] PRIMARY KEY CLUSTERED 
+(
+	[BehandlungNr] ASC,
+	[PersonalNr] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Personal_Fuetterung]    Script Date: 30.03.2023 07:52:14 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Personal_Fuetterung](
+	[FuetterungNr] [smallint] NOT NULL,
+	[PersonalNr] [smallint] NOT NULL,
+	[Fuetterungstermin] [date] NULL,
+ CONSTRAINT [PK_Personal_Fuetterung] PRIMARY KEY CLUSTERED 
+(
+	[FuetterungNr] ASC,
+	[PersonalNr] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Tiere]    Script Date: 30.03.2023 07:52:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1320,6 +1397,21 @@ REFERENCES [dbo].[Klasse] ([Klasse_ID])
 GO
 ALTER TABLE [dbo].[Art] CHECK CONSTRAINT [FK_Art_Klasse]
 GO
+ALTER TABLE [dbo].[Behandlung]  WITH CHECK ADD  CONSTRAINT [FK_Behandlung_Tiere] FOREIGN KEY([Tier])
+REFERENCES [dbo].[Tiere] ([TierNr])
+GO
+ALTER TABLE [dbo].[Behandlung] CHECK CONSTRAINT [FK_Behandlung_Tiere]
+GO
+ALTER TABLE [dbo].[Behandlung_Diagnose]  WITH CHECK ADD  CONSTRAINT [FK_Behandlung_Diagnose_Behandlung] FOREIGN KEY([BehandlungNr])
+REFERENCES [dbo].[Behandlung] ([Behandlung_ID])
+GO
+ALTER TABLE [dbo].[Behandlung_Diagnose] CHECK CONSTRAINT [FK_Behandlung_Diagnose_Behandlung]
+GO
+ALTER TABLE [dbo].[Behandlung_Diagnose]  WITH CHECK ADD  CONSTRAINT [FK_Behandlung_Diagnose_Diagnose] FOREIGN KEY([DiagnoseNr])
+REFERENCES [dbo].[Diagnose] ([Diagnose_ID])
+GO
+ALTER TABLE [dbo].[Behandlung_Diagnose] CHECK CONSTRAINT [FK_Behandlung_Diagnose_Diagnose]
+GO
 ALTER TABLE [dbo].[Futtermenge]  WITH CHECK ADD  CONSTRAINT [FK_Futtermenge_Futter] FOREIGN KEY([Futter_Nr])
 REFERENCES [dbo].[Futter] ([Futter_ID])
 GO
@@ -1364,6 +1456,26 @@ ALTER TABLE [dbo].[Mitarbeiter]  WITH CHECK ADD  CONSTRAINT [FK_Mitarbeiter_Abte
 REFERENCES [dbo].[Abteilung] ([Abt_ID])
 GO
 ALTER TABLE [dbo].[Mitarbeiter] CHECK CONSTRAINT [FK_Mitarbeiter_Abteilung]
+GO
+ALTER TABLE [dbo].[Personal_Behandlung]  WITH CHECK ADD  CONSTRAINT [FK_Personal_Behandlung_Behandlung] FOREIGN KEY([BehandlungNr])
+REFERENCES [dbo].[Behandlung] ([Behandlung_ID])
+GO
+ALTER TABLE [dbo].[Personal_Behandlung] CHECK CONSTRAINT [FK_Personal_Behandlung_Behandlung]
+GO
+ALTER TABLE [dbo].[Personal_Behandlung]  WITH CHECK ADD  CONSTRAINT [FK_Personal_Behandlung_Mitarbeiter] FOREIGN KEY([PersonalNr])
+REFERENCES [dbo].[Mitarbeiter] ([MitArb_ID])
+GO
+ALTER TABLE [dbo].[Personal_Behandlung] CHECK CONSTRAINT [FK_Personal_Behandlung_Mitarbeiter]
+GO
+ALTER TABLE [dbo].[Personal_Fuetterung]  WITH CHECK ADD  CONSTRAINT [FK_Personal_Fuetterung_Futterration] FOREIGN KEY([FuetterungNr])
+REFERENCES [dbo].[Futterration] ([Rations_ID])
+GO
+ALTER TABLE [dbo].[Personal_Fuetterung] CHECK CONSTRAINT [FK_Personal_Fuetterung_Futterration]
+GO
+ALTER TABLE [dbo].[Personal_Fuetterung]  WITH CHECK ADD  CONSTRAINT [FK_Personal_Fuetterung_Mitarbeiter] FOREIGN KEY([PersonalNr])
+REFERENCES [dbo].[Mitarbeiter] ([MitArb_ID])
+GO
+ALTER TABLE [dbo].[Personal_Fuetterung] CHECK CONSTRAINT [FK_Personal_Fuetterung_Mitarbeiter]
 GO
 ALTER TABLE [dbo].[Tiere]  WITH CHECK ADD  CONSTRAINT [FK_Tiere_Art] FOREIGN KEY([Art])
 REFERENCES [dbo].[Art] ([Tierart_ID])

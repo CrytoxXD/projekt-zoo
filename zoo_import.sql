@@ -423,165 +423,102 @@ INSERT [dbo].[Arbeitsgruppe] ([Taetigkeit_ID], [AbtNr], [Bezeichnung]) VALUES (1
 INSERT [dbo].[Arbeitsgruppe] ([Taetigkeit_ID], [AbtNr], [Bezeichnung]) VALUES (14, 3, N'Maurer')
 INSERT [dbo].[Arbeitsgruppe] ([Taetigkeit_ID], [AbtNr], [Bezeichnung]) VALUES (15, 1, N'Futterkoch')
 GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (1, 1, N'Schwarz', N'Heinz', N'Anaberger Str. 22', N'01139', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (2, 8, N'Schädlich', N'Herbert', N'Plempengasse 25', N'01445', N'Radebeul')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (3, 1, N'Langer', N'Fritz', N'Gablenzer Str. 12', N'01796', N'Pirna')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (4, 1, N'Pollack', N'Wilfried', N'Mühlenstr. 25 b', N'01809', N'Heidenau')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (5, 1, N'Hebel', N'Fritz', N'Waldweg 1', N'01454', N'Radeberg')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (6, 3, N'Kaiser', N'August', N'Südring 98', N'01189', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (7, 1, N'Schneider', N'Gerda', N'Bergstr. 54', N'01796', N'Pirna')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (8, 1, N'Glöckner', N'Manfred', N'Schneeberger Str. 98', N'01705', N'Freital')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (9, 4, N'Mielke', N'Erich', N'Trabantweg 3', N'01139', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (10, 1, N'Meister', N'Udo', N'Berghotelweg 1', N'01825', N'Liebstadt')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (11, 2, N'Schüttele', N'Detlef', N'Südhang 16', N'01217', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (12, 1, N'Diener', N'Minna', N'Hauptstr. 2', N'01796', N'Graupa')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (13, 1, N'Schmidt', N'Tommi', N'Schustergasse 16', N'01640', N'Coswig')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (14, 1, N'Seiten', N'Olivia', N'Bürgerplatz 12', N'09599', N'Freiberg')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (15, 1, N'Weiß', N'Rudolph', N'Stollberger Str. 168', N'01465', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (16, 1, N'Meier', N'Paul', N'Grüner Hang 3', N'01465', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (17, 4, N'Schimanski', N'Horst', N'Spitzelweg 3', N'01307', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (18, 1, N'Pfennig', N'Emil', N'Rosentalstr. 18', N'01139', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (19, 3, N'Spar', N'Gustav', N'Damaschkestr. 34', N'01307', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (20, 1, N'Gebemir', N'Gerd', N'Waldweg 123', N'01307', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (21, 1, N'Suppe', N'Paula', N'Wasserweg 41', N'01809', N'Heidenau')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (22, 5, N'Reich', N'Silvia', N'Dorfstr. 34', N'01809', N'Dohna')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (23, 1, N'Wächter', N'Torsten', N'Hauptstr. 4', N'01796', N'Pirna')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (24, 1, N'Schliesser', N'Gabi', N'Rathausplatz 4', N'01728', N'Bannewitz')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (25, 1, N'Helm', N'Michael', N'Brückenweg 23', N'01328', N'Weißig')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (26, 1, N'Bocuse', N'Paul', N'Annenstr. 45', N'01217', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (27, 2, N'Krug', N'Manfred', N'Hauptstr. 5', N'01662', N'Meißen')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (28, 1, N'Schnecke', N'Rita', N'Hauptstr.67', N'01445', N'Radebeul')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (29, 1, N'Müller', N'Peter', N'Bernsdorfer Str. 16', N'01640', N'Coswig')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (30, 1, N'Hänker', N'Fritz', N'Am Stadion 1', N'09599', N'Freiberg')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (31, 6, N'Müller', N'Anita', N'Pirnaer Str. 3', N'01809', N'Heidenau')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (32, 1, N'König', N'Friedrich', N'Kohlegasse 5', N'01328', N'Weißig')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (33, 1, N'Kabel', N'Michael', N'Wiesenweg 8 f', N'01468', N'Moritzburg')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (34, 9, N'Franke', N'Ulli', N'Malergasse 17', N'01445', N'Radebeul')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (35, 1, N'Müller', N'Jens', N'Ammernstr. 1', N'01662', N'Meißen')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (36, 1, N'Meier', N'Olaf', N'Fischweg 12', N'01468', N'Moritzburg')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (37, 8, N'Waalkes', N'Otto', N'Friesengasse 11', N'01189', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (38, 1, N'Zange', N'Wolfgang', N'Stadtring 88', N'01809', N'Heidenau')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (39, 1, N'Grube', N'Klaire', N'Großenhainer Str. 5', N'01097', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (40, 10, N'Tisch', N'Lothar', N'Am Brühl 13 a', N'01217', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (41, 1, N'Bringe', N'Konrad', N'Brauerweg 25 c', N'01796', N'Pirna')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (42, 11, N'Schmidt', N'Thomas', N'Großenhainer Str. 37', N'01097', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (43, 15, N'Koch', N'Jens', N'Bergstr. 6', N'01796', N'Graupa')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (44, 12, N'Dittrich', N'Andrea', N'Hauptstraße 25', N'01723', N'Mohorn')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (45, 1, N'Brinkmann', N'Diana', N'Am Flugplatz 9', N'01465', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (46, 5, N'Schnelle', N'Linda', N'Am Marktplatz 4', N'01705', N'Freital')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (47, 8, N'Hauptmann', N'Rolf', N'Bachstraße 25 a', N'01796', N'Pirna')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (48, 7, N'Wünsche', N'Silvia', N'Am Gartenheim 5', N'01561', N'Großenhain')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (49, 10, N'Haueisen', N'Egon', N' Bärenweg 4', N'01689', N'Weinböhla')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (50, 7, N'Gottschalk', N'Thomas', N'Am Markt 1', N'01169', N'Cossebaude')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (51, 1, N'Angermann', N'Gerd', N'Kirchgasse 2', N'01454', N'Großerkmannsdorf')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (52, 6, N'Klingel', N'Frieda', N'Postweg 16 c', N'01307', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (53, 5, N'Baldauf', N'Anja', N'Querweg 123', N'01796', N'Pirna')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (54, 1, N'Diettrich', N'Ulf', N'Wartburgstraße 78', N'01454', N'Radeberg')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (55, 12, N'Meier', N'Ramona', N'Schießgasse 4', N'01445', N'Radebeul')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (56, 1, N'Jäckel', N'Bernd', N'Hauptstrasse 3', N'01561', N'Großenhain')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (57, 13, N'Riegel', N'Leopold', N'Textilweg 24', N'01169', N'Cossebaude')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (58, 1, N'Glaube', N'Rudolph', N'Wiesenweg 16', N'01809', N'Heidenau')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (59, 8, N'Hausmann', N'Marga', N'Am Schloßberg 3', N'01825', N'Liebstadt')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (60, 1, N'Sauger', N'Steffen', N'Gärtnereiweg 8', N'01471', N'Radeburg')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (61, 12, N'Weiss', N'Katja', N'Forstweg 16 a', N'01689', N'Weinböhla')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (62, 14, N'Streßmann', N'Emil', N'Schwarzastraße 16', N'01640', N'Coswig')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (63, 1, N'Wünschmann', N'Holger', N'Andreasstr. 15', N'01465', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (64, 12, N'Koechel', N'Siegfried', N'Dorfstr. 85', N'01728', N'Bannewitz')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (65, 3, N'Prüfer', N'Ullrich', N'Dorfweg 76', N'01454', N'Großerkmannsdorf')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (66, 15, N'Drummer', N'Kurt', N'Rosenhof 234', N'01217', N'Dresden')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (67, 1, N'Pils', N'Michael', N'Am Anger 10', N'01796', N'Graupa')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (68, 8, N'Sauber', N'Manfred', N'Zolastr. 46', N'01796', N'Pirna')
-GO
-INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [Abt_NR], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (69, 1, N'Bertold', N'Jürgen', N'Hauptstr. 26 d', N'01454', N'Radeberg')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (1, N'Verwaltungsgebäude', N'Gebäude')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (2, N'Eingangsgebäude', N'Gebäude')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (3, N'Lager', N'Gebäude')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (4, N'Futterküche', N'Gebäude')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (5, N'Werkstatt', N'Gebäude')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (6, N'Affenhaus', N'Gebäude')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (7, N'Raubtierhaus', N'Gebäude')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (8, N' Aquaterrium', N'Gebäude')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (9, N'Areal 1', N'Freigelände')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (10, N'Areal 2', N'Freigelände')
-GO
-INSERT [dbo].[Objekte] ([Objekt_ID], [Bezeichnung], [Objekt_Art]) VALUES (11, N'Areal 3', N'Freigelände')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (1, 1, N'Schwarz', N'Heinz', N'Anaberger Str. 22', N'01139', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (2, 8, N'Schädlich', N'Herbert', N'Plempengasse 25', N'01445', N'Radebeul')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (3, 1, N'Langer', N'Fritz', N'Gablenzer Str. 12', N'01796', N'Pirna')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (4, 1, N'Pollack', N'Wilfried', N'Mühlenstr. 25 b', N'01809', N'Heidenau')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (5, 1, N'Hebel', N'Fritz', N'Waldweg 1', N'01454', N'Radeberg')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (6, 3, N'Kaiser', N'August', N'Südring 98', N'01189', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (7, 1, N'Schneider', N'Gerda', N'Bergstr. 54', N'01796', N'Pirna')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (8, 1, N'Glöckner', N'Manfred', N'Schneeberger Str. 98', N'01705', N'Freital')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (9, 4, N'Mielke', N'Erich', N'Trabantweg 3', N'01139', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (10, 1, N'Meister', N'Udo', N'Berghotelweg 1', N'01825', N'Liebstadt')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (11, 2, N'Schüttele', N'Detlef', N'Südhang 16', N'01217', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (12, 1, N'Diener', N'Minna', N'Hauptstr. 2', N'01796', N'Graupa')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (13, 1, N'Schmidt', N'Tommi', N'Schustergasse 16', N'01640', N'Coswig')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (14, 1, N'Seiten', N'Olivia', N'Bürgerplatz 12', N'09599', N'Freiberg')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (15, 1, N'Weiß', N'Rudolph', N'Stollberger Str. 168', N'01465', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (16, 1, N'Meier', N'Paul', N'Grüner Hang 3', N'01465', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (17, 4, N'Schimanski', N'Horst', N'Spitzelweg 3', N'01307', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (18, 1, N'Pfennig', N'Emil', N'Rosentalstr. 18', N'01139', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (19, 3, N'Spar', N'Gustav', N'Damaschkestr. 34', N'01307', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (20, 1, N'Gebemir', N'Gerd', N'Waldweg 123', N'01307', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (21, 1, N'Suppe', N'Paula', N'Wasserweg 41', N'01809', N'Heidenau')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (22, 5, N'Reich', N'Silvia', N'Dorfstr. 34', N'01809', N'Dohna')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (23, 1, N'Wächter', N'Torsten', N'Hauptstr. 4', N'01796', N'Pirna')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (24, 1, N'Schliesser', N'Gabi', N'Rathausplatz 4', N'01728', N'Bannewitz')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (25, 1, N'Helm', N'Michael', N'Brückenweg 23', N'01328', N'Weißig')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (26, 1, N'Bocuse', N'Paul', N'Annenstr. 45', N'01217', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (27, 2, N'Krug', N'Manfred', N'Hauptstr. 5', N'01662', N'Meißen')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (28, 1, N'Schnecke', N'Rita', N'Hauptstr.67', N'01445', N'Radebeul')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (29, 1, N'Müller', N'Peter', N'Bernsdorfer Str. 16', N'01640', N'Coswig')
+GO
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (30, 1, N'Hänker', N'Fritz', N'Am Stadion 1', N'09599', N'Freiberg')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (31, 6, N'Müller', N'Anita', N'Pirnaer Str. 3', N'01809', N'Heidenau')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (32, 1, N'König', N'Friedrich', N'Kohlegasse 5', N'01328', N'Weißig')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (33, 1, N'Kabel', N'Michael', N'Wiesenweg 8 f', N'01468', N'Moritzburg')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (34, 9, N'Franke', N'Ulli', N'Malergasse 17', N'01445', N'Radebeul')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (35, 1, N'Müller', N'Jens', N'Ammernstr. 1', N'01662', N'Meißen')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (36, 1, N'Meier', N'Olaf', N'Fischweg 12', N'01468', N'Moritzburg')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (37, 8, N'Waalkes', N'Otto', N'Friesengasse 11', N'01189', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (38, 1, N'Zange', N'Wolfgang', N'Stadtring 88', N'01809', N'Heidenau')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (39, 1, N'Grube', N'Klaire', N'Großenhainer Str. 5', N'01097', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (40, 10, N'Tisch', N'Lothar', N'Am Brühl 13 a', N'01217', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (41, 1, N'Bringe', N'Konrad', N'Brauerweg 25 c', N'01796', N'Pirna')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (42, 11, N'Schmidt', N'Thomas', N'Großenhainer Str. 37', N'01097', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (43, 15, N'Koch', N'Jens', N'Bergstr. 6', N'01796', N'Graupa')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (44, 12, N'Dittrich', N'Andrea', N'Hauptstraße 25', N'01723', N'Mohorn')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (45, 1, N'Brinkmann', N'Diana', N'Am Flugplatz 9', N'01465', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (46, 5, N'Schnelle', N'Linda', N'Am Marktplatz 4', N'01705', N'Freital')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (47, 8, N'Hauptmann', N'Rolf', N'Bachstraße 25 a', N'01796', N'Pirna')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (48, 7, N'Wünsche', N'Silvia', N'Am Gartenheim 5', N'01561', N'Großenhain')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (49, 10, N'Haueisen', N'Egon', N' Bärenweg 4', N'01689', N'Weinböhla')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (50, 7, N'Gottschalk', N'Thomas', N'Am Markt 1', N'01169', N'Cossebaude')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (51, 1, N'Angermann', N'Gerd', N'Kirchgasse 2', N'01454', N'Großerkmannsdorf')
+GO
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (52, 6, N'Klingel', N'Frieda', N'Postweg 16 c', N'01307', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (53, 5, N'Baldauf', N'Anja', N'Querweg 123', N'01796', N'Pirna')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (54, 1, N'Diettrich', N'Ulf', N'Wartburgstraße 78', N'01454', N'Radeberg')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (55, 12, N'Meier', N'Ramona', N'Schießgasse 4', N'01445', N'Radebeul')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (56, 1, N'Jäckel', N'Bernd', N'Hauptstrasse 3', N'01561', N'Großenhain')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (57, 13, N'Riegel', N'Leopold', N'Textilweg 24', N'01169', N'Cossebaude')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (58, 1, N'Glaube', N'Rudolph', N'Wiesenweg 16', N'01809', N'Heidenau')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (59, 8, N'Hausmann', N'Marga', N'Am Schloßberg 3', N'01825', N'Liebstadt')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (60, 1, N'Sauger', N'Steffen', N'Gärtnereiweg 8', N'01471', N'Radeburg')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (61, 12, N'Weiss', N'Katja', N'Forstweg 16 a', N'01689', N'Weinböhla')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (62, 14, N'Streßmann', N'Emil', N'Schwarzastraße 16', N'01640', N'Coswig')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (63, 1, N'Wünschmann', N'Holger', N'Andreasstr. 15', N'01465', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (64, 12, N'Koechel', N'Siegfried', N'Dorfstr. 85', N'01728', N'Bannewitz')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (65, 3, N'Prüfer', N'Ullrich', N'Dorfweg 76', N'01454', N'Großerkmannsdorf')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (66, 15, N'Drummer', N'Kurt', N'Rosenhof 234', N'01217', N'Dresden')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (67, 1, N'Pils', N'Michael', N'Am Anger 10', N'01796', N'Graupa')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (68, 8, N'Sauber', N'Manfred', N'Zolastr. 46', N'01796', N'Pirna')
+INSERT [dbo].[Mitarbeiter] ([MitArb_ID], [TaetigkeitNr], [Name], [Vorname], [Strasse], [PLZ], [Ort]) VALUES (69, 1, N'Bertold', N'Jürgen', N'Hauptstr. 26 d', N'01454', N'Radeberg')
+GO
+INSERT [dbo].[ObjektArt] ([Art_ID], [Bezeichnung]) VALUES (1, N'Gebäude')
+INSERT [dbo].[ObjektArt] ([Art_ID], [Bezeichnung]) VALUES (2, N'Freigelände')
+GO
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (1, 1, N'Verwaltungsgebäude')
+GO1, 
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (2, 1, N'Eingangsgebäude')
+GO1, 
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (3, 1, N'Lager')
+GO1, 
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (4, 1, N'Futterküche')
+GO1, 
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (5, 1, N'Werkstatt')
+GO1, 
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (6, 1, N'Affenhaus')
+GO1, 
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (7, 1, N'Raubtierhaus')
+GO1, 
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (8, 1, N' Aquaterrium')
+GO
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (9, 2, N'Areal 1')
+GO
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (10, 2, N'Areal 2')
+GO
+INSERT [dbo].[Objekte] ([Objekt_ID], [ArtNr], [Bezeichnung]) VALUES (11, 2, N'Areal 3')
 GO
 INSERT [dbo].[Tiere] ([TierNr], [Name], [Bezeichnung], [Art], [Anzahl], [Gehege_Nr]) VALUES (1, N'Jumbo', N'Asiatischer Elefant', 1, 1, 1)
 GO

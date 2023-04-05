@@ -1,0 +1,18 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:app"
+        xmlns:ZooDataSetTableAdapters="clr-namespace:app.ZooDataSetTableAdapters" x:Class="app.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Loaded="Window_Loaded" Width="800" Height="500" SizeChanged="Window_SizeChanged" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+    <Window.Resources>
+        <local:ZooDataSet x:Key="zooDataSet"/>
+        <CollectionViewSource x:Key="mitarbeiter_ViewViewSource" Source="{Binding Mitarbeiter_View, Source={StaticResource zooDataSet}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource mitarbeiter_ViewViewSource}">
+        <ComboBox x:Name="selectDataTable" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="DataTable" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" SelectionChanged="DataTable_SelectionChanged" Loaded="DataTable_Loaded" ItemsSource="{Binding}" Width="777"/>
+    </Grid>
+</Window>

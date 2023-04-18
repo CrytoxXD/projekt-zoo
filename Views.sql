@@ -1,3 +1,5 @@
+USE [Zoo]
+GO
 /****** View Gehegebetreuung ******/
 CREATE VIEW Gehegebetreuung_View
 AS

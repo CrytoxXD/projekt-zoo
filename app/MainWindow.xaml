@@ -10,9 +10,14 @@
     <Window.Resources>
         <local:ZooDataSet x:Key="zooDataSet"/>
         <CollectionViewSource x:Key="mitarbeiter_ViewViewSource" Source="{Binding Mitarbeiter_View, Source={StaticResource zooDataSet}}"/>
+        <CollectionViewSource x:Key="tier_Gehege_ObjektViewSource" Source="{Binding Tier_Gehege_Objekt, Source={StaticResource zooDataSet}}"/>
     </Window.Resources>
-    <Grid DataContext="{StaticResource mitarbeiter_ViewViewSource}">
-        <ComboBox x:Name="selectDataTable" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
-        <DataGrid x:Name="DataTable" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" SelectionChanged="DataTable_SelectionChanged" Loaded="DataTable_Loaded" ItemsSource="{Binding}" Width="777"/>
+    <Grid>
+        <ComboBox x:Name="selectDataTable" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="selectDataTable_SelectionChanged">
+            <ComboBoxItem Content="Mitarbeiter"/>
+            <ComboBoxItem Content="Tiere"/>
+        </ComboBox>
+        <DataGrid DataContext="{StaticResource tier_Gehege_ObjektViewSource}" x:Name="DataTable" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" SelectionChanged="DataTable_SelectionChanged" Loaded="DataTable_Loaded" Width="777" ItemsSource="{Binding}"/>
+        <Button x:Name="submit" Content="Submit" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="75"/>
     </Grid>
 </Window>

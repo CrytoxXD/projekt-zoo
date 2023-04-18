@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Bericht_Tierart_Gehege_Objekt", "Bericht_Tierart_Gehege_Objekt\Bericht_Tierart_Gehege_Objekt.rptproj", "{2E028A7A-2A24-49D1-9AEF-8F1E9AABA442}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E028A7A-2A24-49D1-9AEF-8F1E9AABA442}.Debug|Default.ActiveCfg = Debug
+		{2E028A7A-2A24-49D1-9AEF-8F1E9AABA442}.Debug|Default.Build.0 = Debug
+		{2E028A7A-2A24-49D1-9AEF-8F1E9AABA442}.Debug|Default.Deploy.0 = Debug
+		{2E028A7A-2A24-49D1-9AEF-8F1E9AABA442}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{2E028A7A-2A24-49D1-9AEF-8F1E9AABA442}.DebugLocal|Default.Build.0 = DebugLocal
+		{2E028A7A-2A24-49D1-9AEF-8F1E9AABA442}.Release|Default.ActiveCfg = Release
+		{2E028A7A-2A24-49D1-9AEF-8F1E9AABA442}.Release|Default.Build.0 = Release
+		{2E028A7A-2A24-49D1-9AEF-8F1E9AABA442}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66EE1B24-A3B0-40BE-91A7-60517841C9F6}
+	EndGlobalSection
+EndGlobal

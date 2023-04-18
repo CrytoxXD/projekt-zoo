@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Bericht_Gehegebetreuung", "Bericht_Gehegebetreuung\Bericht_Gehegebetreuung.rptproj", "{52F39CED-D2A6-4FE3-952B-CB7F783DB844}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52F39CED-D2A6-4FE3-952B-CB7F783DB844}.Debug|Default.ActiveCfg = Debug
+		{52F39CED-D2A6-4FE3-952B-CB7F783DB844}.Debug|Default.Build.0 = Debug
+		{52F39CED-D2A6-4FE3-952B-CB7F783DB844}.Debug|Default.Deploy.0 = Debug
+		{52F39CED-D2A6-4FE3-952B-CB7F783DB844}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{52F39CED-D2A6-4FE3-952B-CB7F783DB844}.DebugLocal|Default.Build.0 = DebugLocal
+		{52F39CED-D2A6-4FE3-952B-CB7F783DB844}.Release|Default.ActiveCfg = Release
+		{52F39CED-D2A6-4FE3-952B-CB7F783DB844}.Release|Default.Build.0 = Release
+		{52F39CED-D2A6-4FE3-952B-CB7F783DB844}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0E18C9A-0BBE-46B7-99B0-C27FDA4CEADC}
+	EndGlobalSection
+EndGlobal
